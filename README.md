@@ -1,9 +1,9 @@
 # Catalyst — Modern E-Commerce Frontend
 
 > **Tech Stack:** `React 19` • `Redux Toolkit` • `Tailwind CSS v4` • `Axios` • `Lodash` • `React Toastify`  
-> **Backend API Repository:** [Catalyst-server](https://github.com/Vincent0-8/Catalyst-server)
+> **Backend API Repository:** [Catalyst-server](https://github.com/VincenttChenn/Catalyst-server)
 
-Fullstack E-Commerce Client Application built with **React 19**, **Redux Toolkit**, and **Tailwind CSS v4**. Paired with the RESTful API backend at [Catalyst-server](https://github.com/Vincent0-8/Catalyst-server). Inspired by high-end minimalist boutique marketplaces ([Garmentory](https://www.garmentory.com/)).
+Fullstack E-Commerce Client Application built with **React 19**, **Redux Toolkit**, and **Tailwind CSS v4**. Paired with the RESTful API backend at [Catalyst-server](https://github.com/VincenttChenn/Catalyst-server). Inspired by high-end minimalist boutique marketplaces ([Garmentory](https://www.garmentory.com/)).
 
 ---
 
@@ -11,7 +11,7 @@ Fullstack E-Commerce Client Application built with **React 19**, **Redux Toolkit
 
 - Minimalist Luxury Aesthetics: Curated typography, custom color palette (`charcoal`, `off-white`, `wine accent`), and smooth scroll animations via AOS.
 - Live Product Catalog: Category filtering, debounced search, and shimmer skeleton loading states (`animate-pulse`).
-- Refined Auth Experience: Luxury card layout for login & register, *Remember Me* session persistence, and Chrome autofill aesthetic protection.
+- Refined Auth Experience: Luxury card layout for login & register, _Remember Me_ session persistence, and Chrome autofill aesthetic protection.
 - Persistent Cart & Wishlist: State synchronization with Redux Toolkit and storage isolation per user session.
 - Route Protection & Alerts: Guarded access for Checkout, Order History, and Wishlist with informative toast redirects for guest users.
 - Cross-Browser Scroll Restoration: Automatic scroll resets on route navigation and category filtering across mobile Safari and desktop browsers.
@@ -65,23 +65,27 @@ marketplace-client/
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js `v18+`
 - npm `v9+`
 
 ### Installation & Local Setup
 
 1. **Install dependencies**:
+
    ```bash
    npm install
    ```
 
 2. **Configure Environment Variable**:
    Create a `.env` file in the root of `marketplace-client`:
+
    ```env
    VITE_API_URL=http://localhost:5000/api
    ```
 
 3. **Run Development Server**:
+
    ```bash
    npm run dev
    ```
