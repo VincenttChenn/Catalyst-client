@@ -137,7 +137,7 @@ const Home = () => {
               Try Again
             </button>
           </div>
-        ) : items.length === 0 ? (
+        ) : (!Array.isArray(items) || items.length === 0) ? (
           <div className="py-20 text-center">
             <p className="font-serif text-2xl text-primary mb-2">No products found</p>
             <p className="font-sans text-sm text-primary/60 mb-6">

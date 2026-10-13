@@ -36,7 +36,13 @@ const productSlice = createSlice({
       })
       .addCase(getProducts.fulfilled, (state, action) => {
         state.loading = false;
-        state.items = action.payload;
+        if (Array.isArray(action.payload)) {
+          state.items = action.payload;
+          state.error = null;
+        } else {
+          state.items = [];
+          state.error = 'Failed to load products. Please check server connection.';
+        }
       })
       .addCase(getProducts.rejected, (state, action) => {
         state.loading = false;
